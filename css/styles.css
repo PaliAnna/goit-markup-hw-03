@@ -112,6 +112,15 @@ align-items: center;
     text-decoration: none;
 } 
 
+.menu {
+   display: inline-flex;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
 .info{
     color: var(--text-color-p);
 
@@ -133,16 +142,24 @@ main{
 /* hero */
 .hero {
     background-color: var(--hero-footer-bcg);
+    padding-top: 200px;
+    padding-bottom: 210px;
 }
 
 
-.hero-title{
+.hero-content {
+max-width: 696px;
+
+}
+
+
+
+.hero-title {
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    
-
+   
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -150,14 +167,29 @@ main{
 }
 
 .btn{
+    border: 1px solid var(--blue);
+    display: inline-block;
+    padding: 10px 32px;
     color: var(--white);
     background-color: var(--blue);
     text-decoration: none;
-    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+
+
 
 /* details */
 .details-title{
@@ -181,6 +213,8 @@ main{
     background-color: var(--main-background);
 }
 
+
+/*<!-- Чем занимаемся -->*/
 /* occupation */
 .occupation-title{
     color: var(--primary-text-color);
@@ -191,6 +225,22 @@ main{
     text-align: center;
     letter-spacing: 0.03em;
 }
+.occupation-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+    list-style: none;
+}
+
+.occupation-item {
+    flex-basis: calc(100% / 3 - 30px);
+    border-radius: 4px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
 
 /* .occupation{
     background-color: var(--main-background);   
