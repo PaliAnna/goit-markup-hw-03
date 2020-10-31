@@ -11,9 +11,13 @@
 
 html{
     box-sizing: border-box;    
-     }
-    
-
+}
+   
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
 
 
 /* site-nav */
@@ -201,8 +205,26 @@ max-width: 696px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.details-text{
-    color: var(--text-color-p);
+
+.details-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+    list-style: none;
+}
+
+.details-item {
+    flex-basis: calc(100% / 4 - 30px);
+    
+    margin-left: 30px;
+    margin-top: 30px;
+   
+}
+
+.details-text {
+    color: var(--text-color-p); 
 
     font-weight: 400;
     font-size: 14px;
@@ -212,6 +234,17 @@ max-width: 696px;
 .details{
     background-color: var(--main-background);
 }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
 
 
 /*<!-- Чем занимаемся -->*/
@@ -246,7 +279,18 @@ max-width: 696px;
     background-color: var(--main-background);   
 } */
 
+
+
+
+
 /* team */
+
+/*.team{
+    background-color: var(--text-color-p);
+}
+*/
+
+
 .team-title {
     color: var(--primary-text-color);
     font-weight: 700;
@@ -255,6 +299,22 @@ max-width: 696px;
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+    list-style: none;
+}
+
+.team-item {
+    flex-basis: calc(100% / 4 - 30px);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+
 
 .team-names{
     color: var(--primary-text-color);
@@ -271,7 +331,7 @@ max-width: 696px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18
-/* text-align: center; */
+    /* text-align: center; */
     letter-spacing: 0.03em;
 }
     
