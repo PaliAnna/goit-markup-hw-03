@@ -17,9 +17,34 @@ body {
 li{
     list-style: none;
 }
-
+/*<!-- Хэдэр -->*/
 .site-nav {
     background-color: var(--white);
+}
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background-color: var(--white);
+}
+
+.header .contact-linc {
+    margin-right: 50px;
+}
+
+.header .logo {
+    margin-right: 121px;
+}
+
+.header-container{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
 }
 
 .nav-logo {
