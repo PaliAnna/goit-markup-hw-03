@@ -314,7 +314,7 @@ max-width: 696px;
     text-align: center;
     margin-left: 30px;
     margin-top: 30px;
-
+}
 
 .team-names{
     color: var(--primary-text-color);
@@ -323,8 +323,8 @@ max-width: 696px;
     line-height: 1.18;
     /* text-align: center; */
     letter-spacing: 0.03em;
-
 }
+
 .team-text{
     color: var(--text-color-p);
 
