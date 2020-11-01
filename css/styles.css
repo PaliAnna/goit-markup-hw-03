@@ -47,7 +47,9 @@ h3{
   padding: 0;
 }
 
-
+main{
+    background-color: var(--main-background:);
+}
 
 li{
     list-style: none;
@@ -139,9 +141,7 @@ align-items: center;
     color: var(--blue);
 }
 
-main{
-    background-color: var(--bcg-team);
-}
+
 
 /* hero */
 .hero {
@@ -364,9 +364,39 @@ max-width: 696px;
    
 }
 
-.filter-link {
-    color: var(--primary-text-color);
 
+
+
+
+
+.filter-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    
+.navigation{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+ .filter-link {
+   
+
+    display: inline-block;
+    min-width: 73px;
+    /*font-family: 'Roboto', sans-serif;*/
+   /* color: var(--heading-color);
+    background-color: var(--light-background);
+    border: none;
+    text-align: center;
+   
+    border-radius: 4px;
+    padding: 6px 22px;*/
+    
+    
+    color: var(--primary-text-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -381,6 +411,14 @@ max-width: 696px;
 .filter-link:focus {
     color: var(--blue);
 }
+
+.filter .button:hover,
+.filter .button:focus {
+    color: var(--blue);
+}
+
+
+
 
 /* Offer */
 
