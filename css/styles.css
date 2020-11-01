@@ -196,6 +196,8 @@ max-width: 696px;
 
 
 /* details */
+
+
 .details-title{
     color: var(--primary-text-color);
 
@@ -232,8 +234,11 @@ max-width: 696px;
     letter-spacing: 0.03em;
 }
 .details{
-    background-color: var(--main-background);
+    background-color: var(---white);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
@@ -249,7 +254,12 @@ max-width: 696px;
 
 /*<!-- Чем занимаемся -->*/
 /* occupation */
-.occupation-title{
+.occupation {
+    background-color: var(---white);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.occupation-title {
     color: var(--primary-text-color);
 
     font-weight: 700;
@@ -289,7 +299,11 @@ max-width: 696px;
     background-color: var(--text-color-p);
 }
 */
-
+.team{
+    background-color: var(--main-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .team-title {
     color: var(--primary-text-color);
@@ -332,7 +346,7 @@ max-width: 696px;
     font-size: 16px;
     line-height: 1.18
     /* text-align: center; */
-    letter-spacing: 0.03em;
+   
 }
     
 
@@ -344,25 +358,39 @@ max-width: 696px;
 /* Portfolio */
 
 /* Фильтры */
-.filter-link{
+.filter {
+    background-color: var(---white);
+    padding-top: 94px;
+   
+}
+
+.filter-link {
     color: var(--primary-text-color);
 
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.62; 
 /* identical to box height, or 162% */
 
-text-align: center;
-letter-spacing: 0.03em;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
+
 .filter-link:hover,
-.filter-link:focus{
+.filter-link:focus {
     color: var(--blue);
 }
 
 /* Offer */
-.offer-title{
+
+.Offer {
+    background-color: var(---white);
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+
+.offer-title {
     color: var(--primary-text-color);
 
     font-weight: 700;
@@ -370,7 +398,7 @@ letter-spacing: 0.03em;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.offer-list{
+.offer-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -381,17 +409,14 @@ letter-spacing: 0.03em;
 
 }
 
-.offer-item{
-    flex-basis: calc(100% / 4 - 30px);
+.offer-item {
+    flex-basis: calc(100% / 3- 30px);
   
     margin-left: 30px;
     margin-top: 30px;
-
-
 }
 
-
-.offer-text{
+.offer-text {
     color: var(--text-color-p);
 
     font-weight: 400;
@@ -404,8 +429,10 @@ letter-spacing: 0.03em;
 } */
 
 /* footer */
-.footer{
+.footer {
     background-color: var(--hero-footer-bcg);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo {
     color: var(--blue);
@@ -421,9 +448,8 @@ letter-spacing: 0.03em;
     color: var(--white);
 }   
 
-.f-address{
+.f-address {
     color: var(--white);
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -431,7 +457,7 @@ letter-spacing: 0.03em;
 }
 
 .f-address:hover,
-.f-address:focus{
+.f-address:focus {
     color: var(--blue);
     text-decoration: none;
 }
