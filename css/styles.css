@@ -48,12 +48,20 @@ h3{
 }
 
 main{
-    background-color: var(--main-background:);
+    background-color: var(--white);
 }
 
 li{
     list-style: none;
 }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
 /*<!-- Хэдэр -->*/
 .site-nav {
     background-color: var(--white);
@@ -62,6 +70,8 @@ li{
     padding-top: 24px;
     padding-bottom: 25px;
     background-color: var(--white);
+    border-bottom: 1px solid #ECECEC;
+    
 }
 
 .header .contact-linc {
@@ -152,7 +162,7 @@ align-items: center;
 
 
 .hero-content {
-max-width: 696px;
+    max-width: 696px;
 
 }
 
@@ -196,6 +206,11 @@ max-width: 696px;
 
 
 /* details */
+.details{
+    background-color: var(---white);
+    padding-top: 94px;
+    
+}
 
 
 .details-title{
@@ -233,11 +248,6 @@ max-width: 696px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.details{
-    background-color: var(---white);
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .visually-hidden {
     position: absolute !important;
@@ -256,12 +266,11 @@ max-width: 696px;
 /* occupation */
 .occupation {
     background-color: var(---white);
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 .occupation-title {
     color: var(--primary-text-color);
-
+    margin: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -295,14 +304,10 @@ max-width: 696px;
 
 /* team */
 
-/*.team{
-    background-color: var(--text-color-p);
-}
-*/
-.team{
-    background-color: var(--main-background);
+.team {
+    background-color: var(--bcg-team);
     padding-top: 94px;
-    padding-bottom: 94px;
+   
 }
 
 .team-title {
@@ -312,6 +317,7 @@ max-width: 696px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 50px;
 }
 
 .team-list {
@@ -328,6 +334,14 @@ max-width: 696px;
     text-align: center;
     margin-left: 30px;
     margin-top: 30px;
+    width: 270px;
+   border: 1px solid #EEEEEE;
+}
+
+.team-content {
+    background-color:  #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-names{
@@ -337,11 +351,12 @@ max-width: 696px;
     line-height: 1.18;
     /* text-align: center; */
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .team-text{
     color: var(--text-color-p);
-
+    margin: 0px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18
@@ -361,13 +376,8 @@ max-width: 696px;
 .filter {
     background-color: var(---white);
     padding-top: 94px;
-   
+    padding-bottom: 56px;
 }
-
-
-
-
-
 
 .filter-container{
     display: flex;
@@ -381,7 +391,7 @@ max-width: 696px;
     margin-right: auto;
 }
 
- .filter-link {
+.filter-link {
    
 
     display: inline-block;
@@ -422,15 +432,17 @@ max-width: 696px;
 
 /* Offer */
 
+
 .Offer {
     background-color: var(---white);
-    padding-top: 50px;
-    padding-bottom: 94px;
+   
 }
-
+.offer-container{
+ padding-bottom: 94px;
+}
 .offer-title {
     color: var(--primary-text-color);
-
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -443,20 +455,26 @@ max-width: 696px;
     margin-top: -30px;
     padding: 0;
     list-style: none;
-
-
 }
 
 .offer-item {
     flex-basis: calc(100% / 3- 30px);
-  
     margin-left: 30px;
     margin-top: 30px;
+    width: 370px;
+    border: 1px solid #EEEEEE;
+    
+}
+
+.offer-content {
+    background-color:  #FFFFFF;
+    padding: 20px 24px;
+    ;
 }
 
 .offer-text {
     color: var(--text-color-p);
-
+    margin: 0px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
@@ -471,6 +489,7 @@ max-width: 696px;
     background-color: var(--hero-footer-bcg);
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 .footer-logo {
     color: var(--blue);
@@ -492,6 +511,11 @@ max-width: 696px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin: 0;
+    margin-top: 20px;
+}
+.footer-list .item:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .f-address:hover,
