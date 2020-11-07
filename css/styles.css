@@ -209,7 +209,7 @@ align-items: center;
 .details{
     background-color: var(---white);
     padding-top: 94px;
-    
+    padding-bottom: 94px;
 }
 
 
@@ -270,7 +270,7 @@ align-items: center;
 }
 .occupation-title {
     color: var(--primary-text-color);
-    margin: 50px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -317,7 +317,7 @@ align-items: center;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 50px;
+    margin-bottom: 50px;
 }
 
 .team-list {
@@ -379,16 +379,13 @@ align-items: center;
     padding-bottom: 56px;
 }
 
-.filter-container{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    }
+
     
-.navigation{
+.filter-navigation {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    justify-content: center;
+   
 }
 
 .filter-link {
